@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Refresh -->
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always"
+        android:title="@string/action_refresh"/>
+
+    <!-- New -->
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="always"
+        android:title="@string/action_new"/>
+    
+    <!-- Sign In -->
+    <item android:id="@+id/action_signin"
+          android:title="@string/action_signin"
+          android:visible="false"
+          android:showAsAction="collapseActionView" />
+    
+    <!-- Sign Out -->
+    <item android:id="@+id/action_signout"
+          android:title="@string/action_signout"
+          android:visible="false"
+          android:showAsAction="collapseActionView" />
+    
+    <!-- About -->
+    <item android:id="@+id/action_about"
+          android:icon="@drawable/ic_action_about"
+          android:title="@string/action_about"
+          android:showAsAction="collapseActionView" />
+    
+    <!-- Settings -->
+    <item android:id="@+id/action_settings"
+          android:icon="@drawable/ic_action_settings"
+          android:title="@string/action_settings"
+          android:showAsAction="collapseActionView" />
+    
+    <!-- Help -->
+    <item android:id="@+id/action_help"
+          android:title="@string/action_help"
+          android:showAsAction="collapseActionView" />
+
+</menu>

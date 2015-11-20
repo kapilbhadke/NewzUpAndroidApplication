@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/news_image"
+            android:onClick="onClick"
+            android:src="@drawable/ic_action_send_now" />
+
+        <EditText
+            android:id="@+id/commentText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/send_button" >
+        </EditText>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/newsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#77000000"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true" >
+
+        <!-- <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:alpha="1.0"
+            android:contentDescription="@string/news_image"
+            android:minHeight="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />  -->
+        
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/news_title"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/comments_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/InnerRelativeLayout"
+        android:layout_below="@id/newsLayout"
+        android:divider="#b5b5b5"
+        android:dividerHeight="5dp"
+        android:listSelector="@drawable/list_selector"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253939"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp" >
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Username" >
+
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+    <TextView
+        android:id="@+id/invalidUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUsername"
+        android:layout_centerHorizontal="true"
+        android:text="Invalid username"
+        android:textColor="#ff0000"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@id/txtUsername"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword" >
+    </EditText>
+    <TextView
+        android:id="@+id/invalidPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtPassword"
+        android:text="Incorrect password"
+        android:textColor="#ff0000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invalidPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#5FCECA"
+            android:textColor="#253939"
+            android:layout_marginRight="10dp"
+            android:onClick="SignInNewzup"
+            android:text="Login" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:background="#5FCECA"
+            android:textColor="#253939"
+            android:onClick="finishActivity"
+            android:text="Cancel" >
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="\n\nOR\n"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/googleSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/_btn_google_signin"
+        android:onClick="syncGoogleAccount" >
+    </Button>
+
+</RelativeLayout>

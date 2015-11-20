@@ -1,0 +1,58 @@
+# view res/layout/activity_main.xml #generated:3
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class in.newzup.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class in.newzup.CategoryPreferenceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class in.newzup.CommentActivity { <init>(...); }
+
+# view res/layout/fragment_news.xml #generated:8
+-keep class in.newzup.FooterListViewFromXML { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class in.newzup.HandleSendEventActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class in.newzup.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class in.newzup.PostNewsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class in.newzup.SignInActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class in.newzup.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class in.newzup.WebViewActivity { <init>(...); }
+
+# view res/layout/view_showcase.xml #generated:2
+-keep class in.newzup.showcaseview.ShowcaseView { <init>(...); }
+
+# onClick res/layout/login_dialog.xml #generated:61
+-keepclassmembers class * { *** SignInNewzup(...); }
+
+# onClick res/layout/login_dialog.xml #generated:73
+-keepclassmembers class * { *** finishActivity(...); }
+
+# onClick res/layout/footer1.xml #generated:11
+-keepclassmembers class * { *** loadMore(...); }
+
+# onClick res/layout/comments.xml #generated:15
+# onClick res/layout/web_view_action_bar.xml #generated:46
+-keepclassmembers class * { *** onClick(...); }
+
+# onClick res/layout/web_view_action_bar.xml #generated:34
+-keepclassmembers class * { *** onShare(...); }
+
+# onClick res/layout/showcase_button.xml #generated:18
+-keepclassmembers class * { *** showNextHelp(...); }
+
+# onClick res/layout/login_dialog.xml #generated:99
+-keepclassmembers class * { *** syncGoogleAccount(...); }
+

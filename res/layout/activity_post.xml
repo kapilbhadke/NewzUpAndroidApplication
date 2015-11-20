@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="75dp" >
+
+       <TextView 
+            android:id="@+id/tvUrl"
+       		android:layout_width="60dp"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="10dp"
+        	android:text="URL"
+        	android:textColor="#253939"
+        	android:textStyle="bold"
+        	android:textSize="16sp"
+        	android:layout_marginBottom="20dp"
+        	android:layout_alignBaseline="@+id/etUrl"/>
+       <EditText 
+            android:id="@+id/etUrl"
+            android:inputType="textUri"
+            android:layout_marginRight="10dp"
+       		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginBottom="20dp"
+        	android:textColor="#253939"
+        	android:layout_toRightOf="@+id/tvUrl"/>
+       
+       <TextView 
+            android:id="@+id/tvTags"
+       		android:layout_width="60dp"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="10dp"
+        	android:layout_below="@+id/tvUrl"
+        	android:text="Tags"
+        	android:textColor="#253939"
+        	android:textStyle="bold"
+        	android:textSize="16sp"
+        	android:layout_marginBottom="20dp"
+        	android:layout_alignBaseline="@+id/etTags"/>
+       <EditText 
+            android:id="@+id/etTags"
+       		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="#253939"
+        	android:layout_marginRight="10dp"
+        	android:layout_marginBottom="20dp"
+        	android:layout_toRightOf="@+id/tvTags"
+        	android:layout_below="@+id/etUrl"/>
+       
+       <Spinner
+           android:id="@+id/etCategory"
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/etTags"
+           android:layout_marginLeft="100dp"
+           android:layout_marginBottom="30dp"
+           android:layout_toRightOf="@+id/tvCategory"
+           android:entries="@array/category_arrays"
+           android:prompt="@string/category_prompt" />
+
+   </RelativeLayout>
+
+   <Button 
+       android:id="@+id/btnPost"
+       android:layout_width="100dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="10dp"
+       android:background="#253939"
+       android:textColor="#d3d3d3"
+       android:text="POST"/>
+
+</LinearLayout>
